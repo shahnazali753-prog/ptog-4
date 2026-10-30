@@ -28,3 +28,20 @@ Choose **Settings** in the main menu. Up and down pick a setting, and left and r
 - Starry background (on or off)
 
 Each alien is worth 50 points times the wave number. Clear the fleet and a faster wave arrives.
+
+# Sky Hopper
+
+A simple flap-through-the-gaps game made with pygame. Keep the bird in the air and fly
+through the gaps between the pipes. Each pipe you pass is worth 1 point.
+
+## How to play
+```
+pip install pygame
+python flappy_bird.py
+```
+
+| Key | Action |
+|---|---|
+| Space / Up arrow / mouse click | Flap (also starts and restarts the game) |
+| P | Pause |
+| Esc | Quit |
