@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shahnaz Ali · Developer Portfolio</title>
+  <meta name="description" content="Shahnaz Ali is an aspiring software developer who builds playful, interactive experiences, from retro-style Python games to modern websites.">
+  <meta name="theme-color" content="#0b0b1a">
+  <meta property="og:title" content="Shahnaz Ali · Developer Portfolio">
+  <meta property="og:description" content="Python games, modern websites and a love of building things.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Apply the saved theme before the page draws, so it never flashes -->
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="Shahnaz Ali, back to top">
+        <span class="logo__mark">SA</span><span class="logo__text">Shahnaz Ali</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#play">Play</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="blob blob--1" aria-hidden="true"></div>
+      <div class="blob blob--2" aria-hidden="true"></div>
+      <div class="blob blob--3" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="badge reveal"><span class="dot"></span> Open to new projects &amp; learning</p>
+        <h1 class="hero__title reveal">Hi, I'm <span class="gradient-text">Shahnaz Ali</span></h1>
+        <p class="hero__role reveal">I build <span id="typed" class="typed">Python games</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero__intro reveal">Aspiring software developer who turns ideas into playful, interactive experiences, from retro-style Python games to modern websites.</p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View my work
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#play" class="btn btn--ghost">Play a game</a>
+        </div>
+
+        <ul class="stats reveal">
+          <li><strong data-count="2">0</strong><span>Games built</span></li>
+          <li><strong data-count="700" data-suffix="+">0</strong><span>Lines of Python</span></li>
+          <li><strong data-count="100" data-suffix="%">0</strong><span>Curiosity</span></li>
+        </ul>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__card reveal">
+          <div class="avatar" aria-hidden="true">SA</div>
+          <div class="code-card">
+            <div class="code-card__bar"><i></i><i></i><i></i><span>about_me.py</span></div>
+<pre><code><span class="k">class</span> <span class="f">Developer</span>:
+    name = <span class="s">"Shahnaz Ali"</span>
+    loves = [<span class="s">"games"</span>, <span class="s">"web"</span>, <span class="s">"design"</span>]
+    learning = <span class="k">True</span>
+
+    <span class="k">def</span> <span class="f">build</span>(self, idea):
+        <span class="k">return</span> <span class="s">"something fun"</span></code></pre>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow reveal">About me</p>
+          <h2 class="section__title reveal">Learning by <span class="gradient-text">building</span></h2>
+          <p class="reveal">I'm Shahnaz, a developer at the start of an exciting journey. I learn best by making real things, so every new idea becomes a project: an arcade shooter, a bird that flaps through pipes, and now this website.</p>
+          <p class="reveal">I care about code that's clean and easy to read, and about experiences that feel good to use. Each project teaches me something new, and I'm always looking for the next challenge.</p>
+          <ul class="facts reveal">
+            <li><span>🎮</span> Game development</li>
+            <li><span>🐍</span> Python &amp; Pygame</li>
+            <li><span>🌐</span> Web design</li>
+            <li><span>🚀</span> Always learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Skills</p>
+          <h2 class="section__title reveal">What I <span class="gradient-text">work with</span></h2>
+          <p class="section__sub reveal">Tools and topics I use in my projects, and the ones I'm learning right now.</p>
+        </div>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🐍</div>
+            <h3>Python</h3>
+            <p>Classes, game loops, collision detection and settings systems.</p>
+            <div class="meter"><span style="--level:70%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🎮</div>
+            <h3>Pygame</h3>
+            <p>Drawing, animation, keyboard input, menus and scoring.</p>
+            <div class="meter"><span style="--level:65%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🎨</div>
+            <h3>HTML &amp; CSS</h3>
+            <p>Responsive layouts, gradients, animations and modern design.</p>
+            <div class="meter"><span style="--level:55%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Interactive pages and browser games with the canvas.</p>
+            <div class="meter"><span style="--level:40%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🌿</div>
+            <h3>Git &amp; GitHub</h3>
+            <p>Saving versions of my work and publishing projects online.</p>
+            <div class="meter"><span style="--level:45%"></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🧠</div>
+            <h3>Problem solving</h3>
+            <p>Breaking big ideas into small steps that actually work.</p>
+            <div class="meter"><span style="--level:75%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Projects</p>
+          <h2 class="section__title reveal">Things I've <span class="gradient-text">made</span></h2>
+          <p class="section__sub reveal">Tap a filter to sort the projects.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="python" aria-pressed="false">Python</button>
+          <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-tags="python">
+            <div class="project__art project__art--space" aria-hidden="true">
+              <div class="aliens"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="ship"></div>
+            </div>
+            <div class="project__body">
+              <h3>Alien Invasion</h3>
+              <p>An arcade shooter: stop the alien fleet before it lands. Each wave gets faster, and a full settings menu lets you change difficulty, lives, bullet size, ship colour and more.</p>
+              <ul class="tags"><li>Python</li><li>Pygame</li><li>Game design</li></ul>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://github.com/shahnazali753-prog/ptog-4/blob/main/alien_invasion.py" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="python web">
+            <div class="project__art project__art--sky" aria-hidden="true">
+              <div class="cloud"></div>
+              <div class="pipe pipe--top"></div><div class="pipe pipe--bottom"></div>
+              <div class="bird"></div>
+            </div>
+            <div class="project__body">
+              <h3>Sky Hopper</h3>
+              <p>A flap-through-the-gaps game with simple physics: gravity, flapping and scoring. Built in Python, and now remade in JavaScript so you can play it on this page.</p>
+              <ul class="tags"><li>Python</li><li>Pygame</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="#play">Play now</a>
+                <a class="btn btn--small btn--ghost" href="https://github.com/shahnazali753-prog/ptog-4/blob/main/flappy_bird.py" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="web">
+            <div class="project__art project__art--web" aria-hidden="true">
+              <div class="window"><i></i><i></i><i></i><b></b><b></b><b></b></div>
+            </div>
+            <div class="project__body">
+              <h3>This Portfolio</h3>
+              <p>The website you're looking at. It's fully responsive, has light and dark mode and smooth animations, and is published for free with GitHub Pages.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://github.com/shahnazali753-prog/ptog-4" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Play ===== -->
+    <section class="section section--alt" id="play">
+      <div class="container play">
+        <div class="play__text">
+          <p class="eyebrow reveal">Play</p>
+          <h2 class="section__title reveal">Try <span class="gradient-text">Sky Hopper</span></h2>
+          <p class="reveal">A browser version of my Python game. Fly through the gaps between the pipes. Each pipe you pass is worth one point.</p>
+          <ul class="controls reveal">
+            <li><kbd>Tap</kbd> or <kbd>Space</kbd> to flap</li>
+            <li><kbd>P</kbd> to pause (on a keyboard)</li>
+          </ul>
+          <p class="best reveal">Best score: <strong id="best-score">0</strong></p>
+        </div>
+        <div class="game reveal">
+          <canvas id="game" width="400" height="600" aria-label="Sky Hopper game. Tap or press space to flap." role="img"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="blob blob--4" aria-hidden="true"></div>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Let's build something <span class="gradient-text">together</span></h2>
+          <p class="section__sub">The best way to see my work and follow what I'm building next is on GitHub.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--large" href="https://github.com/shahnazali753-prog" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              Visit my GitHub
+            </a>
+            <button class="btn btn--ghost btn--large" id="share-btn" type="button">Share this site</button>
+          </div>
+          <p class="toast" id="toast" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#home" class="logo"><span class="logo__mark">SA</span><span class="logo__text">Shahnaz Ali</span></a>
+        <p class="footer__tag">Building playful things with code.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#play">Play</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Shahnaz Ali. Made with ♥ and a lot of curiosity.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
