@@ -1,5 +1,5 @@
 /* =========================================================
-   Shahnaz Ali · Portfolio scripts
+   Hussain Ali · Portfolio scripts
    Each feature is a small, self-contained block.
    ========================================================= */
 (function () {
@@ -139,7 +139,7 @@
     toastTimer = setTimeout(() => { toast.textContent = ''; }, 3000);
   }
   $('#share-btn').addEventListener('click', async () => {
-    const data = { title: document.title, text: 'Check out Shahnaz Ali\'s portfolio!', url: location.href.split('#')[0] };
+    const data = { title: document.title, text: 'Check out Hussain Ali\'s portfolio!', url: location.href.split('#')[0] };
     if (navigator.share) {
       try { await navigator.share(data); } catch (e) { /* user closed the share sheet */ }
       return;

@@ -1,4 +1,4 @@
-# Shahnaz Ali · Portfolio & Games
+# Hussain Ali · Portfolio & Games
 
 My personal portfolio website, plus the Python games it shows off.
 
